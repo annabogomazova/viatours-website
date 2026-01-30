@@ -1,7 +1,7 @@
 /* Regular 400 */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/.ttf') format('truetype');
+  src: url('../fonts/Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 /* Medium 500 */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-Medium.ttf') format('truetype');
+  src: url('../fonts/Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,7 +19,7 @@
 /* Bold 700 */
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter-Bold.ttf') format('truetype');
+  src: url('../fonts/Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -28,6 +28,8 @@
 body {
   font-family: 'Inter', sans-serif;
 }
-
-
+.container {
+  max-width: 1800px;
+}
 @import 'header';
+@import 'reset';

@@ -1,41 +1,3 @@
-@charset "UTF-8";
-/* Regular 400 */
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-/* Medium 500 */
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-/* Bold 700 */
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-body {
-  font-family: "Inter", sans-serif;
-}
-
-.container {
-  max-width: 1800px;
-}
-
-.header {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-}
-
 /* Обнуление отступов и размеров */
 *,
 *::before,
@@ -90,5 +52,3 @@ select {
 button {
   cursor: pointer;
 }
-
-/*# sourceMappingURL=main.css.map */
