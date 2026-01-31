@@ -91,4 +91,9 @@ body {
   margin: 0 auto;
 }
 
+.container__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=main.css.map */
