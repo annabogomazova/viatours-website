@@ -1,17 +1,94 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @use "fonts";
- *   | ^^^^^^^^^^^^
- *   '
- *   main.scss 2:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @use \"fonts\";\a   \2502  ^^^^^^^^^^^^\a   \2575 \a   main.scss 2:1  root stylesheet";
+@charset "UTF-8";
+/* Обнуление отступов и размеров */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Убираем стандартные стили */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем маркеры списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Ссылки без подчёркивания */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Картинки адаптивные */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Формы */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Кнопки */
+button {
+  cursor: pointer;
+}
+
+/* Regular 400 */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+/* Medium 500 */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* Bold 700 */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.header {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=main.css.map */
