@@ -21,8 +21,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
+  }
+  &__menu-link{
+    transition: color 0.3s;
+    &:hover{
+      color: $color-orange;
+    }
+  }
+  &__menu-link.link-orange{
+    color: #EB662B;
   }
   .header__btn{
     background: $color-orange;

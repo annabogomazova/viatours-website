@@ -4,9 +4,17 @@
   }
 }
 @media (max-width: 806px) {
+  .header__inner{
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 .header__menu{
-  gap: 30px;
+  gap: 40px;
 }
+  .header__btn{
+    display: none;
+  }
 }
 @media (max-width: 740px) {
   .header__inner{
@@ -19,7 +27,7 @@
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 455px) {
   .header__menu{
     display: flex;
     flex-direction: column;
