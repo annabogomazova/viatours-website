@@ -80,8 +80,67 @@ button {
 }
 .header {
   font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 22px 10px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__logo-img {
+  height: 30px;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.header .header__btn {
+  background: #EB662B;
+  border-radius: 50px;
+  width: 83px;
+  height: 44px;
+  color: white;
 }
 
+@media (max-width: 1026px) {
+  .header__logo-text {
+    display: none;
+  }
+}
+@media (max-width: 806px) {
+  .header__menu {
+    gap: 30px;
+  }
+}
+@media (max-width: 740px) {
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid orange;
+  }
+  .header__btn {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__btn {
+    display: block;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
 }

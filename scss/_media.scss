@@ -1,0 +1,30 @@
+@media (max-width: 1026px) {
+.header__logo-text{
+  display: none;
+  }
+}
+@media (max-width: 806px) {
+.header__menu{
+  gap: 30px;
+}
+}
+@media (max-width: 740px) {
+  .header__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid orange;
+  }
+  .header__btn{
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header__menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .header__btn{
+    display: block;
+  }
+}
