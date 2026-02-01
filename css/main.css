@@ -119,6 +119,11 @@ button {
   height: 44px;
   color: white;
 }
+.header .hamburger {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
 
 @media (max-width: 1026px) {
   .header__logo-text {
@@ -150,16 +155,23 @@ button {
   }
 }
 @media (max-width: 455px) {
+  .header__logo {
+    display: none;
+  }
   .header__menu {
-    display: flex;
     flex-direction: column;
+    display: none;
   }
   .header__btn {
+    display: none;
+  }
+  .hamburger {
     display: block;
   }
 }
-body {
+body, html {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {

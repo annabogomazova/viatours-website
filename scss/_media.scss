@@ -28,11 +28,17 @@
   }
 }
 @media (max-width: 455px) {
+  .header__logo{
+    display: none;
+  }
   .header__menu{
-    display: flex;
     flex-direction: column;
+    display: none;
   }
   .header__btn{
+    display: none;
+  }
+  .hamburger{
     display: block;
   }
 }
