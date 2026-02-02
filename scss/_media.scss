@@ -35,13 +35,21 @@
     display: none;
   }
   .header__menu{
-    display: none;
+    display: flex;             // всегда flex
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    visibility: hidden;      // полностью скрыто изначально
+    opacity: 0;
+    max-height: 0;             // скрыто
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
   .header__menu.active {
-    display: flex;           // показываем меню
-    flex-direction: column;  // вертикально
-    gap: 16px; // расстояние между пунктами
-    align-items: center;
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
   .header__btn{
     display: none;
