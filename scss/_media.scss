@@ -28,17 +28,23 @@
   }
 }
 @media (max-width: 455px) {
+    .header .hamburger {
+      display: block;
+    }
   .header__logo{
     display: none;
   }
   .header__menu{
-    flex-direction: column;
     display: none;
+  }
+  .header__menu.active {
+    display: flex;           // показываем меню
+    flex-direction: column;  // вертикально
+    gap: 16px; // расстояние между пунктами
+    align-items: center;
   }
   .header__btn{
     display: none;
   }
-  .hamburger{
-    display: block;
-  }
+
 }

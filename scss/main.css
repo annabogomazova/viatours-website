@@ -123,6 +123,9 @@ button {
   display: none;
   width: 50px;
   height: 50px;
+  flex-shrink: 0;
+  cursor: pointer;
+  z-index: 10;
 }
 
 @media (max-width: 1026px) {
@@ -155,18 +158,23 @@ button {
   }
 }
 @media (max-width: 455px) {
+  .header .hamburger {
+    display: block;
+  }
   .header__logo {
     display: none;
   }
   .header__menu {
-    flex-direction: column;
     display: none;
+  }
+  .header__menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
   }
   .header__btn {
     display: none;
-  }
-  .hamburger {
-    display: block;
   }
 }
 body, html {
