@@ -185,6 +185,10 @@ button {
     display: none;
   }
 }
+.home {
+  background-image: url("/img/image.png");
+}
+
 body, html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;

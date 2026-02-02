@@ -3,6 +3,7 @@
 @use "variables" as *;
 @use "header";
 @use "media";
+@use "sections/section-home";
 
 body,html {
   font-family: 'Inter', sans-serif;
