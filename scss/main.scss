@@ -2,8 +2,8 @@
 @use "fonts";
 @use "variables" as *;
 @use "header";
-@use "media";
 @use "sections/section-home";
+@use "media";
 
 body,html {
   font-family: 'Inter', sans-serif;
@@ -12,6 +12,7 @@ body,html {
 .container {
   max-width: 1800px;
   margin: 0 auto;
+  padding: 10px;
 }
 .container__inner {
   max-width: 1320px;
