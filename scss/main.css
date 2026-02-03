@@ -197,6 +197,42 @@ button {
 .tours {
   margin-top: 120px;
 }
+.tours__title {
+  font-size: 30px;
+}
+.tours__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.tours__card {
+  max-width: 255px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 15px;
+  transition: all 0.5s linear;
+}
+.tours__card:hover {
+  background: lavender;
+  transition: all 1s linear;
+  border-radius: 20px;
+}
+.tours__card-title {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.tours__card-text {
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 10px;
+  line-height: 30px;
+}
 
 @media (max-width: 1026px) {
   .header__logo-text {
