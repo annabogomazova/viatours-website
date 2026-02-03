@@ -3,6 +3,7 @@
 @use "variables" as *;
 @use "header";
 @use "sections/section-home";
+@use "sections/section-tourz";
 @use "media";
 
 body,html {
@@ -17,5 +18,6 @@ body,html {
 .container__inner {
   max-width: 1320px;
   margin: 0 auto;
+  padding: 10px;
 }
 
