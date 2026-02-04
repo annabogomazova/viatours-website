@@ -1,0 +1,32 @@
+.destinations{
+  margin-top: 120px;
+  &__title{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__info{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__card{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card-icon{
+    padding-bottom: 20px;
+  }
+  &__card-title{
+    font-size:15px ;
+  }
+  &__card-text{
+    padding-top: 10px;
+    font-size:13px ;
+    color: #05073C;
+  }
+}

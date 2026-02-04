@@ -234,9 +234,53 @@ button {
   line-height: 30px;
 }
 
+.destinations {
+  margin-top: 120px;
+}
+.destinations__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.destinations__info {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.destinations__card {
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.destinations__card-icon {
+  padding-bottom: 20px;
+}
+.destinations__card-title {
+  font-size: 15px;
+}
+.destinations__card-text {
+  padding-top: 10px;
+  font-size: 13px;
+  color: #05073C;
+}
+
 @media (max-width: 1026px) {
   .header__logo-text {
     display: none;
+  }
+  .tours__title {
+    text-align: center;
+  }
+  .tours__info {
+    justify-content: space-evenly;
+  }
+  .destinations__title {
+    text-align: center;
+  }
+  .destinations__info {
+    gap: 20px;
   }
 }
 @media (max-width: 806px) {

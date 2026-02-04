@@ -2,7 +2,20 @@
 .header__logo-text{
   display: none;
   }
+  .tours__title{
+    text-align:center ;
+  }
+  .tours__info{
+    justify-content: space-evenly;
+  }
+  .destinations__title{
+    text-align:center ;
+  }
+  .destinations__info{
+    gap: 20px;
+  }
 }
+
 @media (max-width: 806px) {
   .header__inner{
     gap: 10px;
@@ -74,3 +87,4 @@
     }
   }
 }
+
