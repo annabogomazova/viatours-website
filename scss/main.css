@@ -244,33 +244,29 @@ button {
 .destinations__info {
   padding-top: 40px;
   gap: 20px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  transition: transform 0.2s linear;
-  width: max-content;
 }
-.destinations__info__card {
+.destinations__card {
   width: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
 }
-.destinations__info__card-icon {
+.destinations__card-icon {
   padding-bottom: 20px;
 }
-.destinations__info__card-title {
+.destinations__card-title {
   font-size: 15px;
 }
-.destinations__info__card-text {
+.destinations__card-text {
   padding-top: 10px;
   font-size: 13px;
   color: #05073C;
 }
-.destinations__info__button {
+.destinations__button {
   font-size: 20px;
   margin: 40px auto;
   display: block;
@@ -280,10 +276,52 @@ button {
   transition: 0.3s linear;
   cursor: pointer;
 }
-.destinations__info__button:hover {
+.destinations__button:hover {
   color: #EB662B;
   background: seashell;
   transition: all 0.3s linear;
+}
+
+.popular {
+  margin-top: 114px;
+}
+.popular__title {
+  font-size: 30px;
+}
+.popular-slider {
+  padding-top: 40px;
+}
+.popular-slider__track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.popular-slider__card {
+  max-width: 300px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  border: #E7E6E6 1px solid;
+  border-radius: 10px;
+}
+.popular-slider__img {
+  position: relative;
+}
+.popular-slider__img::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: firebrick;
+  z-index: 10;
 }
 
 @media (max-width: 1026px) {

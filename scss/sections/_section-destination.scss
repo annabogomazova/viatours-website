@@ -9,22 +9,17 @@
   &__info {
     padding-top: 40px;
     gap: 20px;
-    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    transition: transform 0.2s linear;
-    width: max-content;
-
+  }
     &__card {
       width: 130px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      flex-shrink: 0;
     }
-
     &__card-icon {
       padding-bottom: 20px;
     }
@@ -56,4 +51,3 @@
       }
     }
   }
-}
