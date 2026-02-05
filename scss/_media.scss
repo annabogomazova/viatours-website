@@ -102,4 +102,41 @@
     flex: 1 0 40%; // 2 карточки в ряд
   }
 }
+@media (max-width: 628px) {
+  .popular__title{
+    text-align: center;
+  }
+  .popular-slider__track{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 943px) {
+  .popular__title{
+    text-align: center;
+  }
+  .popular-slider__track{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap:wrap ;
+  }
+  
+}
+@media (max-width: 1218px) {
+  .sale{
+    &-inner{
+     flex-direction: column;
+     gap: 40px;
+      padding: 20px;
+    }
+  }
+  .sale-inner__info{
+    max-width: 700px;
+    margin-top: 40px;
+  }
+}
+
 

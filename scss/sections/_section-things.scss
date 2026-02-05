@@ -1,0 +1,74 @@
+.things{
+  &__title{
+   font-size: 30px;
+    color: #05073C;
+    padding: 20px;
+  }
+  &__catalog{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  &__catalog-item {
+    display: flex;
+    gap: 20px;
+    img {
+      display: block;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  &__catalog-item:first-child {
+    .things__column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 300px; // маленькие картинки — фиксированная ширина
+        height: 240px; // и высота
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+    .things__img--big {
+      width: 410px;   // большая картинка
+      height: 510px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  &__catalog-item:last-child {
+    flex-direction: column;
+    gap: 20px;
+
+    > .things__img--big {
+      width: 520px; // длинная сверху
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .things__column {
+      display: flex;
+      gap: 20px;
+
+      img:first-child {
+        width: 190px;
+        height: 240px;
+      }
+
+      img:last-child {
+        width: 300px;
+        height: 240px;
+      }
+
+      img {
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+  }
+}

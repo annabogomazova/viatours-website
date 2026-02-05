@@ -22,8 +22,12 @@
     }
     &__card-icon {
       padding-bottom: 20px;
+      transition: .2s linear;
+      &:hover {
+        transform: scale(1.1);
+        transition: transform .2s linear;
+      }
     }
-
     &__card-title {
       font-size: 15px;
     }

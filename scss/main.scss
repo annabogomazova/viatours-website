@@ -6,6 +6,8 @@
 @use "sections/section-tourz";
 @use "sections/section-destination";
 @use "sections/section-popular";
+@use "sections/section-sale";
+@use "sections/section-things";
 @use "media";
 
 body,html {
@@ -21,5 +23,8 @@ body,html {
   max-width: 1320px;
   margin: 0 auto;
   padding: 10px;
+}
+img{
+  display: block;
 }
 

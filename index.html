@@ -19,7 +19,7 @@
             <nav class="header__nav">
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link link-orange" href="#">Home</a>
+                        <a class="header__menu-link link-orange" href="#home">Home</a>
                     </li>
                     <li class="header__menu-item">
                         <a class="header__menu-link" href="#destination">Destinations</a>
@@ -40,7 +40,7 @@
         </div>
     </div>
 </header>
- <section class="home">
+ <section class="home" id="home">
      <div class="container">
          <div class="home-banner">
              <div class="home-banner__info">
@@ -98,7 +98,7 @@
         </div>
     </div>
 </section>
-<section class="destinations">
+<section class="destinations" id="destination">
     <div class="container__inner">
         <h1 class="destinations__title">Trending destinations</h1>
         <div class="destinations__info">
@@ -228,8 +228,41 @@
                 </div>
             </div>
         </div>
-        <button class="popular-slider__button" id="next">Next</button>
     </div>
+</section>
+<section class="sale">
+<div class="sale-inner">
+    <div class="sale-inner__info">
+        <h1 class="sale-inner__title">Grab up to <span class="orange">35% off</span> on your favorite Destination</h1>
+        <p class="sale-inner__text">Limited time offer, don't miss the opportunity</p>
+        <button class="sale-inner__button">Book Now</button>
+    </div>
+    <div class="sale-inner__image">
+        <img src="./img/sale/section-sale.png" alt="">
+    </div>
+</div>
+</section>
+<section class="things">
+   <div class="container__inner">
+       <h1 class="things__title">Popular things to do</h1>
+       <button class="things__button">See All</button>
+       <div class="things__catalog">
+           <div class="things__catalog-item">
+               <div class="things__column">
+                   <img class="things__img things__img--small" src="./img/things/1.png" alt="">
+                   <img class="things__img things__img--small" src="./img/things/2.png" alt="">
+               </div>
+                   <img class="things__img things__img--big" src="./img/things/3.png" alt="">
+           </div>
+          <div class="things__catalog-item">
+               <img class="things__img things__img--big" src="./img/things/4.png" alt="">
+              <div class="things__column">
+                  <img class="things__img things__img--small" src="./img/things/5.png" alt="">
+                  <img class="things__img things__img--small" src="./img/things/6.png" alt="">
+              </div>
+          </div>
+       </div>
+   </div>
 </section>
 <script src="js/index.js"></script>
 </body>

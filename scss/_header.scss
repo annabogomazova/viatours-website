@@ -3,6 +3,10 @@
 .header {
   font-family:'Inter', sans-serif;
   font-size: $font-text;
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   &__inner {
     display: flex;
     justify-content: space-around;
@@ -23,6 +27,7 @@
     justify-content: space-between;
     gap: 40px;
     flex-wrap: wrap;
+
   }
   &__menu-link{
     transition: color 0.3s;
