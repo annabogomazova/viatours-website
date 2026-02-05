@@ -243,28 +243,47 @@ button {
 }
 .destinations__info {
   padding-top: 40px;
+  gap: 20px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  transition: transform 0.2s linear;
+  width: max-content;
 }
-.destinations__card {
+.destinations__info__card {
   width: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
-.destinations__card-icon {
+.destinations__info__card-icon {
   padding-bottom: 20px;
 }
-.destinations__card-title {
+.destinations__info__card-title {
   font-size: 15px;
 }
-.destinations__card-text {
+.destinations__info__card-text {
   padding-top: 10px;
   font-size: 13px;
   color: #05073C;
+}
+.destinations__info__button {
+  font-size: 20px;
+  margin: 40px auto;
+  display: block;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.destinations__info__button:hover {
+  color: #EB662B;
+  background: seashell;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 1026px) {
@@ -349,6 +368,21 @@ button {
     display: flex;
     justify-content: center;
     gap: 20px;
+  }
+}
+@media (max-width: 862px) {
+  .destinations__card {
+    flex: 1 0 20%;
+  }
+}
+@media (max-width: 646px) {
+  .destinations__card {
+    flex: 1 0 30%;
+  }
+}
+@media (max-width: 470px) {
+  .destinations__card {
+    flex: 1 0 40%;
   }
 }
 body, html {

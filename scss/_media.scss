@@ -87,4 +87,19 @@
     }
   }
 }
+@media (max-width: 862px) {
+  .destinations__card {
+    flex: 1 0 20%; // 2 карточки в ряд
+  }
+}
+@media (max-width: 646px) {
+  .destinations__card {
+    flex: 1 0 30%; // 2 карточки в ряд
+  }
+}
+@media (max-width: 470px) {
+  .destinations__card {
+    flex: 1 0 40%; // 2 карточки в ряд
+  }
+}
 
