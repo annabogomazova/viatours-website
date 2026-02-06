@@ -307,6 +307,20 @@ button {
   gap: 20px;
   flex-wrap: wrap;
 }
+.popular-slider__card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s linear;
+}
+.popular-slider__card-link:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s linear;
+}
+.popular-slider__card-link:hover .popular-slider__subtitle,
+.popular-slider__card-link:hover .popular-slider__text {
+  text-decoration: underline;
+}
 .popular-slider__card {
   max-width: 300px;
   min-height: 388px;
@@ -403,6 +417,16 @@ button {
   font-size: 30px;
   color: #05073C;
   padding: 20px;
+}
+.things__button {
+  padding: 20px;
+  transition: 0.3s linear;
+}
+.things__button:hover {
+  cursor: pointer;
+  color: #EB662B;
+  transform: translateX(20px);
+  transition: transform 0.3s, color 0.3s;
 }
 .things__catalog {
   display: flex;

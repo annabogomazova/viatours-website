@@ -4,6 +4,16 @@
     color: #05073C;
     padding: 20px;
   }
+  &__button{
+    padding: 20px;
+    transition: 0.3s linear;
+    &:hover{
+      cursor: pointer;
+      color: #EB662B;
+      transform: translateX(20px); // чуть сдвигаем при наведении
+      transition: transform 0.3s, color 0.3s;
+    }
+  }
   &__catalog{
     display: flex;
     gap: 10px;

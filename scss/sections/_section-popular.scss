@@ -13,6 +13,21 @@
     gap: 20px;
     flex-wrap:wrap ;
   }
+  &-slider__card-link {
+    display: block; // чтобы ссылка охватывала всю карточку
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s linear;
+
+    &:hover {
+      transform: scale(1.03);
+      transition: transform .3s linear;
+      .popular-slider__subtitle,
+      .popular-slider__text {
+        text-decoration: underline;
+      }
+    }
+  }
   &-slider__card{
     max-width: 300px;
     min-height: 388px;
