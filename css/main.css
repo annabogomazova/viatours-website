@@ -576,6 +576,67 @@ button {
   font-weight: bold;
 }
 
+.reviews {
+  margin-top: 143px;
+}
+.reviews__title {
+  text-align: center;
+}
+.reviews__slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  margin: 80px auto;
+  gap: 40px;
+  max-width: 650px;
+  position: relative;
+  overflow: hidden;
+}
+.reviews__item {
+  display: none;
+  max-width: 630px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  position: relative;
+}
+.reviews__item.active {
+  display: flex;
+}
+.reviews__item-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.reviews__item-subtitle {
+  color: #EB662B;
+  font-size: 17px;
+  font-weight: 300;
+}
+.reviews__item-text {
+  font-size: 15px;
+  line-height: 37px;
+  text-align: center;
+}
+.reviews__dots {
+  text-align: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #000;
+}
+
 @media (max-width: 1026px) {
   .header__logo-text {
     display: none;
