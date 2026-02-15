@@ -296,32 +296,19 @@ button {
 }
 .popular__title {
   font-size: 30px;
+  color: #05073C;
 }
-.popular-slider {
+.popular-catalog {
   padding-top: 40px;
 }
-.popular-slider__track {
+.popular-catalog__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
 }
-.popular-slider__card-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: 0.3s linear;
-}
-.popular-slider__card-link:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s linear;
-}
-.popular-slider__card-link:hover .popular-slider__subtitle,
-.popular-slider__card-link:hover .popular-slider__text {
-  text-decoration: underline;
-}
-.popular-slider__card {
+.popular-catalog__card {
   max-width: 300px;
   min-height: 388px;
   display: flex;
@@ -331,32 +318,26 @@ button {
   border: #E7E6E6 1px solid;
   border-radius: 10px;
 }
-.popular-slider__img {
-  position: relative;
+.popular-catalog__card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s linear;
 }
-.popular-slider__img::after {
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 40px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: firebrick;
-  z-index: 10;
+.popular-catalog__card:hover .popular-catalog__subtitle,
+.popular-catalog__card:hover .popular-catalog__text {
+  text-decoration: underline;
 }
-.popular-slider__subtitle {
+.popular-catalog__subtitle {
   padding: 10px 0 10px 20px;
   font-size: 14px;
   color: #717171;
   text-align: center;
 }
-.popular-slider__text {
+.popular-catalog__text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
 }
-.popular-slider__info {
+.popular-catalog__info {
   height: 40px;
   gap: 120px;
   display: flex;
@@ -430,7 +411,7 @@ button {
 }
 .things__catalog {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
@@ -443,6 +424,12 @@ button {
   display: block;
   object-fit: cover;
   border-radius: 12px;
+  transition: 0.3s;
+}
+.things__catalog-item img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 .things__catalog-item:first-child .things__column {
   display: flex;
@@ -486,6 +473,107 @@ button {
 .things__catalog-item:last-child .things__column img {
   object-fit: cover;
   border-radius: 12px;
+}
+
+.trending {
+  margin-top: 115px;
+}
+.trending__inner {
+  background: #F5F5F5;
+  max-width: 1530px;
+  padding-top: 115px;
+  margin: 0 auto;
+}
+.trending__title {
+  font-size: 30px;
+  color: #05073C;
+  margin-top: 0;
+  padding: 20px;
+}
+.trending__button {
+  padding: 20px;
+  transition: 0.3s linear;
+}
+.trending__button:hover {
+  cursor: pointer;
+  color: #EB662B;
+  transform: translateX(20px);
+  transition: transform 0.3s, color 0.3s;
+}
+.trending__catalog {
+  padding-top: 40px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.trending__catalog-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  transition: transform 0.3s ease;
+}
+.trending__catalog-card {
+  min-width: 300px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: #E7E6E6 1px solid;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  transition: 0.3s linear;
+}
+.trending__catalog-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s linear;
+}
+.trending__catalog-card:hover .trending-catalog__subtitle,
+.trending__catalog-card:hover .trending-catalog__text {
+  text-decoration: underline;
+}
+.trending__catalog-img {
+  display: block;
+  max-width: 278px;
+  height: 198.56px;
+  width: 100%;
+}
+.trending__catalog-subtitle {
+  padding: 10px 0 10px 20px;
+  font-size: 14px;
+  color: #717171;
+  text-align: center;
+}
+.trending__catalog-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.trending__catalog-info {
+  height: 40px;
+  gap: 120px;
+  display: flex;
+  border-top: #E7E6E6 solid 2px;
+  align-items: center;
+  justify-content: center;
+}
+.trending__btn {
+  text-align: center;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  cursor: pointer;
+}
+.trending__btn-prev, .trending__btn-next {
+  padding: 10px;
+  border-bottom: #05073C solid 1px;
+  transition: all 0.3s linear;
+}
+.trending__btn-prev:hover, .trending__btn-next:hover {
+  color: #EB662B;
+  transition: all 0.3s linear;
+  font-weight: bold;
 }
 
 @media (max-width: 1026px) {

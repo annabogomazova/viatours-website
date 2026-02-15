@@ -2,33 +2,19 @@
   margin-top: 114px;
   &__title{
     font-size: 30px;
+    color: #05073C;
   }
-  &-slider{
+  &-catalog{
     padding-top: 40px;
   }
-  &-slider__track{
+  &-catalog__item{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     flex-wrap:wrap ;
   }
-  &-slider__card-link {
-    display: block; // чтобы ссылка охватывала всю карточку
-    text-decoration: none;
-    color: inherit;
-    transition: 0.3s linear;
-
-    &:hover {
-      transform: scale(1.03);
-      transition: transform .3s linear;
-      .popular-slider__subtitle,
-      .popular-slider__text {
-        text-decoration: underline;
-      }
-    }
-  }
-  &-slider__card{
+  &-catalog__card{
     max-width: 300px;
     min-height: 388px;
     display: flex;
@@ -37,33 +23,27 @@
     padding: 10px;
     border: #E7E6E6 1px solid;
     border-radius: 10px;
-  }
-  &-slider__img{
-    position: relative;
-    &::after{
-      content: "";
-      position: absolute;
-      top: 50px;
-      left: 40px;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      background-color: firebrick;
-      z-index: 10;
+    &:hover {
+      transform: scale(1.03);
+      transition: transform .3s linear;
+      .popular-catalog__subtitle,
+      .popular-catalog__text {
+        text-decoration: underline;
+      }
     }
   }
-    &-slider__subtitle{
+    &-catalog__subtitle{
       padding: 10px 0 10px 20px;
       font-size: 14px;
       color: #717171;
       text-align: center;
     }
-    &-slider__text{
+    &-catalog__text{
       font-size: 16px;
       line-height: 1.5;
       text-align: center;
     }
-    &-slider__info{
+    &-catalog__info{
       height:40px ;
       gap: 120px;
       display: flex;
