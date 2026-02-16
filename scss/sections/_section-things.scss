@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 40px;
+    flex-wrap: wrap;
   }
   &__catalog-item {
     display: flex;
@@ -68,7 +69,6 @@
       object-fit: cover;
       border-radius: 12px;
     }
-
     .things__column {
       display: flex;
       gap: 20px;
@@ -76,12 +76,10 @@
         width: 190px;
         height: 240px;
       }
-
       img:last-child {
         width: 300px;
         height: 240px;
       }
-
       img {
         object-fit: cover;
         border-radius: 12px;

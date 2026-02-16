@@ -138,5 +138,40 @@
     margin-top: 40px;
   }
 }
-
+@media (max-width: 765px) {
+    .things__catalog{
+       max-width: 100%;
+    }
+    .things__catalog-item{
+      flex-direction: column;
+      align-items: center;
+    }
+   .things__catalog-item:first-child .things__column img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+   }
+  .trending__catalog{
+    width: 70%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .trending__catalog-cards{
+    max-width: 100%;
+  }
+  .trending__catalog-card {
+    min-width: 100%; /* займёт почти весь экран */
+    justify-content:center;
+    align-items: center;
+  }
+}
+@media (max-width: 942px) {
+   .booking__blocks{
+     flex-direction: column;
+   }
+   .booking__block{
+     padding-top: 50px;
+     padding-bottom: 50px;
+   }
+}
 

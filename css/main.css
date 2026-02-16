@@ -415,6 +415,7 @@ button {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+  flex-wrap: wrap;
 }
 .things__catalog-item {
   display: flex;
@@ -504,6 +505,7 @@ button {
   padding-top: 40px;
   overflow: hidden;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
 .trending__catalog-cards {
   display: flex;
@@ -594,6 +596,7 @@ button {
 .reviews__item {
   display: none;
   max-width: 630px;
+  height: 350px;
   margin: 0 auto;
   flex-direction: column;
   gap: 25px;
@@ -635,6 +638,67 @@ button {
 
 .dot.active {
   background: #000;
+}
+
+.booking {
+  background-image: url("../img/booking/text.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1530px;
+  margin: 134px auto;
+  border-radius: 12px;
+}
+.booking__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking__block {
+  width: 450px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 100%;
+}
+.booking__title {
+  font-size: 39px;
+  line-height: 52px;
+}
+.booking__text {
+  padding-top: 17px;
+  line-height: 28px;
+}
+.booking__description {
+  padding-top: 20px;
+  padding-bottom: 44px;
+}
+.booking__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.booking__input {
+  width: 320px;
+  height: 60px;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+.booking__btn {
+  width: 107px;
+  height: 60px;
+  background: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+.booking__img {
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
 }
 
 @media (max-width: 1026px) {
@@ -767,6 +831,42 @@ button {
   .sale-inner__info {
     max-width: 700px;
     margin-top: 40px;
+  }
+}
+@media (max-width: 765px) {
+  .things__catalog {
+    max-width: 100%;
+  }
+  .things__catalog-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .things__catalog-item:first-child .things__column img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+  }
+  .trending__catalog {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .trending__catalog-cards {
+    max-width: 100%;
+  }
+  .trending__catalog-card {
+    min-width: 100%; /* займёт почти весь экран */
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 942px) {
+  .booking__blocks {
+    flex-direction: column;
+  }
+  .booking__block {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 body, html {
