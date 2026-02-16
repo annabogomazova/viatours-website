@@ -707,6 +707,7 @@ button {
 .articles__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .articles__title {
   font-size: 30px;
@@ -739,6 +740,7 @@ button {
 }
 .articles__text {
   font-size: 18px;
+  line-height: 27px;
 }
 
 @media (max-width: 1026px) {
@@ -907,6 +909,15 @@ button {
   .booking__block {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 859px) {
+  .articles__cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .articles__header {
+    justify-content: space-around;
   }
 }
 body, html {

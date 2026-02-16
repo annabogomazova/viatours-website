@@ -174,4 +174,13 @@
      padding-bottom: 50px;
    }
 }
+@media (max-width: 859px) {
+  .articles__cards{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .articles__header{
+    justify-content: space-around;
+  }
+}
 
