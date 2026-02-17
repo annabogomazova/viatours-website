@@ -15,12 +15,19 @@
   &__item {
     display: none;
     max-width: 630px;
-    height: 350px;
+    height: 360px;
     margin: 0 auto;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     position: relative;
+    transition: all 0.2s linear;
+    padding: 20px;
+    &:hover{
+     border-radius: 50%;
+      background-color: #F5F5F5;
+      transition:all 0.2s linear;
+    }
   }
   &__item.active{
     display: flex;

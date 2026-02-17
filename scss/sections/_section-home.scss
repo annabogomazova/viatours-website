@@ -56,12 +56,11 @@
       border-radius: 12px;
       border: #05073C 1px solid;
       transition: all 0.3s linear;
-    }
-    &__btn:hover{
-      background: #EB662B;
-      transition: all 0.3s linear;
-      border: none;
+      &:hover{
+        background: #EB662B;
+        transition: all 0.3s linear;
+        border: none;
+      }
     }
   }
-
 }

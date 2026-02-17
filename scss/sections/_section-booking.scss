@@ -51,6 +51,14 @@
     background: white;
     border-radius: 20px;
     padding: 15px;
+    transition: all 0.3s linear;
+    &:hover {
+      background: #EB662B;
+      transition: all 0.3s linear;
+      border: none;
+      border-radius: 20px;
+      color: white;
+    }
   }
   &__img{
     display: flex;
