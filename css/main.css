@@ -198,6 +198,10 @@ button {
   border: none;
 }
 
+.home--active {
+  background-image: url("../img/home2.png");
+}
+
 .tours {
   margin-top: 120px;
 }
