@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.header__menu');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     menu.classList.toggle('active');
 });
 
@@ -19,19 +19,19 @@ const cardWidth = document.querySelector('.trending__catalog-card').offsetWidth 
 //обработчик событий
 //На кнопку btnNext вешаю обработчик события click.
 btnNext.addEventListener('click', () => {
-    catalog.scrollLeft += cardWidth ; // листаем на карточку
+    catalog.scrollLeft += cardWidth; // листаем на карточку
 });
 
 btnPrev.addEventListener('click', () => {
-    catalog.scrollLeft -= cardWidth ;
+    catalog.scrollLeft -= cardWidth;
 });
 
 //slider reviews-section
 
-    const slides = document.querySelectorAll('.reviews__item');
-    const dots = document.querySelectorAll('.dot');
-     for (let i = 0; i < dots.length; i++) {
-    dots[i].onclick = function() {
+const slides = document.querySelectorAll('.reviews__item');
+const dots = document.querySelectorAll('.dot');
+for (let i = 0; i < dots.length; i++) {
+    dots[i].onclick = function () {
 
         // скрываем все слайды
         for (let j = 0; j < slides.length; j++) {
@@ -44,11 +44,23 @@ btnPrev.addEventListener('click', () => {
     }
 }
 
-const button = document.querySelector('.home-banner__btn'); // кнопка
-const features = document.querySelectorAll('.home-banner__feature'); // все иконки
+const button = document.querySelector('.home-banner__btn');
+const home = document.querySelector('.home');
 
-button.addEventListener('click', function() {
-    features.forEach(feature => {
-        feature.classList.toggle('remove'); // скрываем или показываем каждую иконку
-    });
+button.addEventListener('click', function () {
+    home.classList.toggle('home--active');
 });
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const title = document.querySelector('.hero__banner-title');
+    const colors = ['red', 'blue', 'green', 'orange'];
+    let i = 0;
+
+    setInterval(() => {
+    title.style.color = colors[i % colors.length];
+    i++;
+}, 2000);
+});
+
+
+

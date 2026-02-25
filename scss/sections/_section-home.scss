@@ -1,4 +1,5 @@
 .home{
+  padding: 0;
   background-image:linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%),
   url("../img/image.png");
   background-repeat: no-repeat;
@@ -66,5 +67,5 @@
   }
 }
 .home--active {
-  background-image: url("../img/home2.png");
+  background-image: url("../img/image2.png");
 }
