@@ -5,6 +5,7 @@
   background-position: center;
   min-height: 784px;
   height: auto;
+  color: white;
   &__banner{
     padding-top: 200px ;
     display: flex;
@@ -31,10 +32,11 @@
     background: #E7E6E6;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 20px;
     &:hover{
       .hero__banner-circle {
-        transform: translateX(40px);
+        transform: translateX(-30px);
       }
     }
   }
@@ -47,9 +49,8 @@
     height: 40px;
     border-radius: 50%;
     background: #EB662B;
-    transition: transform 0.3s ease; // ВАЖНО
+    transition: transform 0.2s linear;
   }
-
   &__banner-text{
     padding-top: 40px;
     padding-bottom: 29px;
@@ -71,12 +72,13 @@
   }
 }
 .hero .header.header--hero {
-  background-color: transparent;
+  background: rgba(0, 0, 0, 0.2);
 }
-.container--flex{
+.container--hero{
   justify-content: space-between;
   align-items: center;
   display: flex;
+
 }
 .header__menu--destination {
   display: flex;

@@ -1,5 +1,5 @@
 .popular{
-  margin-top: 114px;
+ padding: 114px 0;
   &__title{
     font-size: 30px;
     color: #05073C;
@@ -23,6 +23,7 @@
     padding: 10px;
     border: #E7E6E6 1px solid;
     border-radius: 10px;
+    transition:.3s linear ;
     &:hover {
       transform: scale(1.03);
       transition: transform .3s linear;
