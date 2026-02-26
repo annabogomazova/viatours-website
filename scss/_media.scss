@@ -274,11 +274,22 @@
 }
 @media(max-width: 554px) {
   .header--hero{
+    flex-direction: column;
     .header__logo{
       display: none;
     }
     .header__menu--destination {
       padding-top: 20px;
     }
+  }
+}
+@media (max-width: 649px) {
+  .hero__banner{
+    max-width: 700px;
+    padding:200px 20px ;
+  }
+  .hero__banner-title{
+    font-size: 50px;
+    line-height: 60px;
   }
 }
