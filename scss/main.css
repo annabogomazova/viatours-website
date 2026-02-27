@@ -971,6 +971,7 @@ button {
   color: white;
   width: 100%;
   max-width: 1920px;
+  transition: background-image 0.2s ease;
 }
 .hero__banner {
   padding-top: 200px;
@@ -1082,32 +1083,44 @@ button {
   color: white;
   border-radius: 20px;
 }
+.discover__card:hover {
+  color: black;
+}
 .discover .card--first {
   background-image: url("../img/destination/deals.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in-out;
 }
 .discover .card--first:hover {
   background-image: url("../img/destination/norway.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .discover .card--second {
   background-image: url("../img/destination/dubai.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in-out;
 }
 .discover .card--second:hover {
   background-image: url("../img/destination/dubai.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .discover .card--third {
   background-image: url("../img/destination/discover-Europe.png");
   background-repeat: no-repeat;
   background-size: cover;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in-out;
 }
 .discover .card--third:hover {
   background-image: url("../img/destination/europe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .discover__card-description {
   padding: 50px 50px;

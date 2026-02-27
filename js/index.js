@@ -51,15 +51,30 @@ button.addEventListener('click', function () {
     home.classList.toggle('home--active');
 });
 
-    document.addEventListener('DOMContentLoaded', () => {
-    const title = document.querySelector('.hero__banner-title');
-    const colors = ['red', 'blue', 'green', 'orange'];
-    let i = 0;
 
-    setInterval(() => {
-    title.style.color = colors[i % colors.length];
-    i++;
-}, 2000);
-});
+//не работает
+const hero = document.querySelector('.hero');
+
+const backgrounds = [
+    'img/destination/dubai.jpg',
+    'img/destination/norway.jpeg',
+    'img/destination/europe.jpg'
+];
+
+let current = 0;
+
+// первый фон сразу
+hero.style.backgroundImage = 'url(' + backgrounds[current] + ')';
+
+// функция смены фона
+function changeBackground() {
+    current++;
+    if (current >= backgrounds.length) current = 0;
+    hero.style.backgroundImage = 'url(' + backgrounds[current] + ')';
+}
+
+// каждые 10 секунд
+setInterval(changeBackground, 10000);
+
 
 

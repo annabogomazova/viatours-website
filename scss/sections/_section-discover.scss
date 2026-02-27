@@ -16,32 +16,44 @@
     justify-content: start;
     color: white;
     border-radius: 20px;
+    &:hover{
+      color: black;
+    }
   }
   .card--first{
     background-image: url("../img/destination/deals.png");
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all 0.3s linear;
+    transition: all 0.2s ease-in-out;
     &:hover{
       background-image: url("../img/destination/norway.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   .card--second{
     background-image: url("../img/destination/dubai.png");
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all 0.3s linear;
+    transition: all 0.2s ease-in-out;
     &:hover{
       background-image: url("../img/destination/dubai.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   .card--third{
     background-image: url("../img/destination/discover-Europe.png");
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all 0.3s linear;
+    transition: all 0.2s ease-in-out;
     &:hover{
       background-image: url("../img/destination/europe.jpg");
+background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   &__card-description{
