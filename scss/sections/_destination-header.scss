@@ -15,7 +15,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     gap: 20px;
     max-width: 909px;
     width: 100%;
@@ -26,6 +25,12 @@
     font-size: 70px;
     text-align: center;
     line-height: 84px;
+    color: white;
+    text-shadow:
+            3px 0 0 black,
+            -1px 0 0 black ,
+            0 1px 0 #4C43C4,
+            0 -1px 0 #EE8C61;
   }
   &__banner-form{
     margin-top: 30px;
@@ -67,11 +72,11 @@
     justify-content: space-evenly;
   }
   &__banner-btn{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.6);
     width: 148px;
     height: 60px;
     border-radius: 30px;
-    color: white;
+    color:#05073C;
     transition: 0.2s linear;
     &:hover {
       transition: background 0.2s linear;

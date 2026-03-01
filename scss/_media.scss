@@ -108,11 +108,15 @@
     flex: 1 0 40%; // 2 карточки в ряд
   }
 }
+@media (max-width: 1278px ) {
+  .popular__title{
+    text-align: center;
+  }
+}
 @media (max-width: 628px) {
   .popular__title{
     text-align: center;
   }
-
   @media (max-width: 640px) {
     .popular-catalog__item{
       justify-content: center;
@@ -291,5 +295,28 @@
   .hero__banner-title{
     font-size: 50px;
     line-height: 60px;
+  }
+}
+@media (max-width: 1247px) {
+    .discover__cards{
+      justify-content: center;
+      gap: 40px;
+    }
+}
+@media (max-width: 1500px) {
+    .top-tours__item{
+      padding: 100px 20px;
+      justify-content: center;
+      gap: 40px;
+      align-items: center;
+    }
+  .top-tours__cards{
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 468px) {
+  .top-tours__card{
+   max-width: 100%;
   }
 }

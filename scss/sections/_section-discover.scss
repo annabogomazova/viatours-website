@@ -1,11 +1,14 @@
-.discover{
+.discover {
   padding: 80px 0;
-  &__cards{
+
+  &__cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
-  &__card{
+
+  &__card {
     max-width: 409px;
     width: 100%;
     min-height: 347px;
@@ -16,54 +19,64 @@
     justify-content: start;
     color: white;
     border-radius: 20px;
-    &:hover{
+
+    &:hover {
       color: black;
     }
   }
-  .card--first{
+
+  .card--first {
     background-image: url("../img/destination/deals.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.2s ease-in-out;
-    &:hover{
+
+    &:hover {
       background-image: url("../img/destination/norway.jpeg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
   }
-  .card--second{
+
+  .card--second {
     background-image: url("../img/destination/dubai.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.2s ease-in-out;
-    &:hover{
+
+    &:hover {
       background-image: url("../img/destination/dubai.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
   }
-  .card--third{
+
+  .card--third {
     background-image: url("../img/destination/discover-Europe.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.2s ease-in-out;
-    &:hover{
-      background-image: url("../img/destination/europe.jpg");
-background-position: center;
+
+    &:hover {
+      background-image: url("../img/destination/italy3.jpg");
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     }
   }
-  &__card-description{
+
+  &__card-description {
     padding: 50px 50px;
   }
-  &__card-title{
+
+  &__card-title {
     padding-top: 20px;
     line-height: 36px;
   }
-  &__card-btn{
+
+  &__card-btn {
     margin: 50px 50px;
     width: 190px;
     height: 62px;
@@ -71,6 +84,7 @@ background-position: center;
     color: black;
     border-radius: 20px;
     transition: 0.2s linear;
+
     &:hover {
       transition: background 0.2s linear;
       background: orange;

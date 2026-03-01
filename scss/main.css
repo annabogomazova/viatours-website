@@ -303,17 +303,17 @@ button {
   font-size: 30px;
   color: #05073C;
 }
-.popular-catalog {
+.popular .popular-catalog {
   padding-top: 40px;
 }
-.popular-catalog__item {
+.popular .popular-catalog__item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
 }
-.popular-catalog__card {
+.popular .popular-catalog__card {
   max-width: 300px;
   min-height: 388px;
   display: flex;
@@ -324,26 +324,26 @@ button {
   border-radius: 10px;
   transition: 0.3s linear;
 }
-.popular-catalog__card:hover {
+.popular .popular-catalog__card:hover {
   transform: scale(1.03);
   transition: transform 0.3s linear;
 }
-.popular-catalog__card:hover .popular-catalog__subtitle,
-.popular-catalog__card:hover .popular-catalog__text {
+.popular .popular-catalog__card:hover .popular-catalog__subtitle,
+.popular .popular-catalog__card:hover .popular-catalog__text {
   text-decoration: underline;
 }
-.popular-catalog__subtitle {
+.popular .popular-catalog__subtitle {
   padding: 10px 0 10px 20px;
   font-size: 14px;
   color: #717171;
   text-align: center;
 }
-.popular-catalog__text {
+.popular .popular-catalog__text {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
 }
-.popular-catalog__info {
+.popular .popular-catalog__info {
   height: 40px;
   gap: 120px;
   display: flex;
@@ -979,7 +979,6 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   gap: 20px;
   max-width: 909px;
   width: 100%;
@@ -990,6 +989,8 @@ button {
   font-size: 70px;
   text-align: center;
   line-height: 84px;
+  color: white;
+  text-shadow: 3px 0 0 black, -1px 0 0 black, 0 1px 0 #4C43C4, 0 -1px 0 #EE8C61;
 }
 .hero__banner-form {
   margin-top: 30px;
@@ -1029,11 +1030,11 @@ button {
   justify-content: space-evenly;
 }
 .hero__banner-btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
   width: 148px;
   height: 60px;
   border-radius: 30px;
-  color: white;
+  color: #05073C;
   transition: 0.2s linear;
 }
 .hero__banner-btn:hover {
@@ -1070,6 +1071,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .discover__card {
   max-width: 409px;
@@ -1117,7 +1119,7 @@ button {
   transition: all 0.2s ease-in-out;
 }
 .discover .card--third:hover {
-  background-image: url("../img/destination/europe.jpg");
+  background-image: url("../img/destination/italy3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1168,7 +1170,8 @@ button {
   line-height: 28px;
 }
 .top-tours__btn {
-  width: 409px;
+  max-width: 409px;
+  width: 100%;
   border-radius: 20px;
   height: 62px;
   color: white;
@@ -1201,16 +1204,47 @@ button {
   align-items: center;
   padding: 30px 0 30px 0;
   gap: 10px;
-  transition: animation 0.6s ease;
+  transition: background 0.4s linear;
 }
 .top-tours__card:hover {
-  transform: rotateY(360deg);
-  transition: transform 0.6s linear;
+  background: #EB662B;
+  color: white;
 }
 .top-tours__card-title {
   font-size: 18px;
   font-weight: 500;
   padding-top: 20px;
+}
+
+.inspiration {
+  padding: 120px 0;
+}
+.inspiration__content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.inspiration__content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+.inspiration__cards {
+  padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.inspiration__card {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .footer {
@@ -1417,6 +1451,11 @@ button {
     flex: 1 0 40%;
   }
 }
+@media (max-width: 1278px) {
+  .popular__title {
+    text-align: center;
+  }
+}
 @media (max-width: 628px) {
   .popular__title {
     text-align: center;
@@ -1597,6 +1636,29 @@ button {
   .hero__banner-title {
     font-size: 50px;
     line-height: 60px;
+  }
+}
+@media (max-width: 1247px) {
+  .discover__cards {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 1500px) {
+  .top-tours__item {
+    padding: 100px 20px;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+  }
+  .top-tours__cards {
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+@media (max-width: 468px) {
+  .top-tours__card {
+    max-width: 100%;
   }
 }
 body, html {
