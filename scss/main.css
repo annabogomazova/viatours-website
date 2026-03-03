@@ -1238,12 +1238,50 @@ button {
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .inspiration__card {
   display: flex;
   align-items: start;
   gap: 10px;
   flex-direction: column;
+}
+
+.ultimate-tours__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  background: #FEF7F4;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 50px 100px;
+  flex-wrap: wrap;
+}
+.ultimate-tours__info {
+  padding-top: 70px;
+}
+.ultimate-tours__benefits {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.ultimate-tours__benefit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: 28px;
+}
+.ultimate-tours__benefit-title {
+  font-size: 17px;
+}
+.ultimate-tours__img {
+  max-width: 610px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 .footer {
@@ -1658,6 +1696,57 @@ button {
 @media (max-width: 468px) {
   .top-tours__card {
     max-width: 100%;
+  }
+}
+@media (max-width: 1302px) {
+  .ultimate-tours__content {
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ultimate-tours__benefits {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 1087px) {
+  .ultimate-tours__content {
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+  }
+  .ultimate-tours__benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+  }
+  .ultimate-tours__benefit {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .ultimate-tours__title {
+    text-align: center;
+    line-height: 48px;
+  }
+  .ultimate-tours__img {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+@media (max-width: 848px) {
+  .ultimate-tours__benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 50px;
+  }
+  .ultimate-tours__benefit {
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
   }
 }
 body, html {
