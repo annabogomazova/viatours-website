@@ -1284,6 +1284,32 @@ button {
   border-radius: 20px;
 }
 
+.features {
+  padding-top: 120px;
+}
+.features__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.features__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.features__icon h1 {
+  padding-top: 20px;
+}
+
+.flexible {
+  background-image: "../img/flexible.png";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .footer {
   background-image: url("../img/footer.png");
   background-repeat: no-repeat;
