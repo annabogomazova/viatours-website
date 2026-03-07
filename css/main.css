@@ -590,7 +590,7 @@ button {
 }
 
 .reviews {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .reviews__title {
   text-align: center;
@@ -598,7 +598,7 @@ button {
 .reviews__slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  margin: 80px auto;
+  margin: 30px auto;
   gap: 40px;
   max-width: 650px;
   position: relative;
@@ -664,7 +664,6 @@ button {
   background-size: cover;
   background-position: center;
   max-width: 1530px;
-  padding: 100px 0;
   margin: 0 auto;
   border-radius: 12px;
 }
@@ -674,12 +673,20 @@ button {
   justify-content: space-between;
   align-items: center;
 }
-.booking__block {
-  width: 450px;
+.booking__block:first-child {
+  max-width: 450px;
+  width: 100%;
   color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  max-width: 100%;
+  padding-top: 50px;
+}
+.booking__block:last-child {
+  max-width: 600px;
+  width: 100%;
+}
+.booking__block:last-child img {
+  max-width: 600px;
+  object-fit: cover;
+  width: 100%;
 }
 .booking__title {
   font-size: 39px;
@@ -722,10 +729,9 @@ button {
   border-radius: 20px;
   color: white;
 }
-.booking__img {
-  display: flex;
-  align-items: end;
-  justify-content: flex-end;
+.booking__block-img {
+  max-width: 450px;
+  width: 100%;
 }
 
 .articles {
@@ -1304,10 +1310,108 @@ button {
 }
 
 .flexible {
-  background-image: "../img/flexible.png";
+  background-image: url("../img/flexible.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-top: 100px;
+}
+.flexible__content {
+  margin: 250px auto;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  padding: 10px;
+}
+.flexible__title {
+  font-size: 70px;
+}
+.flexible__text {
+  text-align: center;
+  line-height: 29px;
+  font-size: 15px;
+  max-width: 395px;
+  width: 100%;
+}
+.flexible__btn {
+  background-image: url("../img/flexible-vector.png");
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+#videoContainer {
+  display: none;
+}
+
+.travelers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #FEF7F4;
+}
+.travelers__cards {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.travelers__card {
+  width: 409px;
+  height: 315px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+.travelers__card-title {
+  color: #EB662B;
+  font-size: 17px;
+  padding: 0 0 20px 0;
+  font-weight: 400;
+}
+.travelers__card-text {
+  line-height: 28px;
+  color: #05073C;
+  padding: 0 0 20px 0;
+}
+.travelers__card-text::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 1px;
+  background: #E7E6E6;
+  margin-top: 20px;
+}
+.travelers__author {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.travelers__stats {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.travelers__stat {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.travelers__stat-num {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .footer {

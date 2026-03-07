@@ -1,0 +1,62 @@
+.travelers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #FEF7F4;
+  &__cards {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  &__card {
+    width: 409px;
+    height: 315px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  &__card-title{
+    color: #EB662B;
+    font-size: 17px;
+    padding: 0 0 20px 0;
+    font-weight: 400;
+  }
+  &__card-text{
+    line-height: 28px;
+    color: #05073C;
+    padding: 0 0 20px 0;
+    &::after{
+      content: "";
+      display: block;
+      width: 350px;
+      height: 1px;
+      background: #E7E6E6;
+      margin-top: 20px;
+    }
+  }
+  &__author{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  &__stats{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  &__stat{
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content:start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__stat-num{
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
